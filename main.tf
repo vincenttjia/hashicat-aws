@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-local{
+locals{
   Departement = "devops"
 }
 
