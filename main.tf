@@ -134,6 +134,7 @@ resource "aws_instance" "hashicat" {
     Name = "${var.prefix}-hashicat-instance"
     Departement = local.Departement
     Billable = "yes"
+    Owner = "vincent"
   }
 }
 
