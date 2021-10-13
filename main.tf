@@ -8,7 +8,7 @@ terraform {
 }
 
 locals{
-  Departement = "devops"
+  Department = "devops"
 }
 
 provider "aws" {
@@ -132,7 +132,7 @@ resource "aws_instance" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
-    Departement = local.Departement
+    Department = local.Department
     Billable = "yes"
     Owner = "vincent"
   }
